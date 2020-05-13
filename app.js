@@ -26,7 +26,7 @@ function myFunction() {
         document.getElementById("demo2").style.color = "red";
         document.getElementById('demo2').style.marginLeft ="25px"
 
-    } else if ((x<=100 || x>=2) || (isNaN(y) || y<2 || y>100)){
+    } else if ((x<=100 || x>=2) && (isNaN(y) || y<2 || y>100)){
         text = "Number 2 input "+ y+" is not in the range of 2 and 100 "
         // show the message in the web
         document.getElementById('demo').innerHTML = text;
@@ -37,7 +37,7 @@ function myFunction() {
         text='';
         document.getElementById("demo2").innerHTML = text;
 
-    }else if(isNaN(x) || (isNaN(y) || y<2 || y>100)){
+    }else if((isNaN(x) || isNaN(y)) && (y<2 || y>100)){
         text = "Number 1 input "+ x + " is not a valid number"
         // show the message in the web
         document.getElementById('demo').innerHTML = text;
@@ -51,8 +51,24 @@ function myFunction() {
         document.getElementById('demo2').style.fontSize = "15px";
         document.getElementById("demo2").style.color = "red";
         document.getElementById('demo2').style.marginLeft ="25px"
-    }
+    }else if ((x<=100 && x>=2) && (y<=100 && y>=2)){
+        var eventNum = even (x,y);
+        function even (x,y){
+            x=parseInt(x)
+            y=parseInt(y)
+            let Num1=y;
+            let num2=x;
+            let evenArr =[];
+            for (let i = num1; i < num2; i++) {
+                if(i%2==0){
+                    evenArr.push(i)
+            }
+        return evenArr;
+        }
+        console.log(eventNum)
 
+    }
+    }
     }
     
     
