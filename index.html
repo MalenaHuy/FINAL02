@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hello</h1>
+    <div class="main" id="mainBox">
+        <h1>Midterm Exam</h1>
+        <h2>Find all prime number between two numbers</h2>
+    </div>   
+
+    <Form>
+        <div class="row">
+            <div class="form-group col-12 col-md-6 col-xs-12">
+                <label for="Number1"> Number 1: </label>
+                <input id="num1" type="text"   class="form-control" >
+            </div>
+            <div class="row-group col-12 col-md-6 col-xs-12">
+                <label for="Number2">Number 2:</label>
+                <input  id="num2" type="text"  class="form-control" >
+            </div>
+        </div>
+
+        <!-- submit buttom -->
+        <div id="button">
+            <button type="button" onclick="myFunction()">Submit</button>
+        </div>
+
+        <div id="claculation"> 
+            <h3>Calculation Result:</h3>
+        </div>
+
+        <!-- print on the website -->
+        <p id="demo"></p>
+        <p id="demo2"></p>
+
+    </Form>    
     <script src="app.js"></script>
 </body>
 </html>
