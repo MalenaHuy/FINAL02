@@ -15,7 +15,7 @@
     padding-bottom: 10px;
     padding-left: 25px;
     /* text bold */
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 #button{
     padding-top: 15px;
@@ -24,4 +24,16 @@
 
 #claculation{
     padding-left: 25px;   
+}
+
+@media screen and (max-width: 640px) {
+    .row {
+      flex-direction: column;
+    }
+    .text{
+        width: 1000%;    
+    }
+    .col-xs-12 {
+        max-width: 100%;
+    } 
 }
